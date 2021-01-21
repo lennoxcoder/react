@@ -1,0 +1,79 @@
+:root {
+
+    --bg-dark: #1A2F3A;
+    --shadow: 
+        0 2px 23px 0 rgba(0,0,0,0.1),
+        0 2px 49px 0 rgba(0,0,0,0.6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.app {
+
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    grid-template-rows: 120px 1fr 40px;
+    grid-template-areas: 
+    "logo header"
+    "menu content"
+    "menu footer";
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+aside.logo {
+    grid-area: logo;
+}
+
+aside.menu-area {
+    grid-area: menu;
+}   
+
+header.header {
+    grid-area: header;
+}
+
+main.content {
+    grid-area: content;
+}
+
+footer.footer {
+    grid-area: footer;
+}
+
+
+@media(max-width: 768px) {
+    .app {
+        grid-template-rows:
+            var(--header-height)
+            var(--menu-top-height)
+            1fr
+            var(--footer-height);
+        grid-template-columns: var(--aside-width) 1fr;
+        grid-template-areas:
+            "logo header"
+            "menu menu"
+            "content content"
+            "footer footer";
+    }
+}
+
+@media(max-width: 576px) {
+    .app {
+        grid-template-rows:
+            var(--logo-height)
+            var(--menu-top-height)
+            1fr
+            var(--footer-height);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "menu"
+            "content"
+            "footer";
+    }
+}

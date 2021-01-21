@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Silvania",
+      "email": "sil@outlook.com"
+    },
+    {
+      "id": 2,
+      "name": "Andreia",
+      "email": "and@terra.com.br"
+    },
+    {
+      "id": 3,
+      "name": "Sofia",
+      "email": "so@yahoo.com"
+    },
+    {
+      "id": 4,
+      "name": "Cristiane",
+      "email": "cris@outlook.com"
+    },
+    {
+      "id": 5,
+      "name": "Angela",
+      "email": "angel@sky.com"
+    },
+    {
+      "id": 6,
+      "name": "Fernanda",
+      "email": "fer@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "leon",
+      "email": "leon@outlook.com",
+      
+    }
+  ]
+}

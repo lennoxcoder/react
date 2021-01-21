@@ -1,0 +1,17 @@
+aside.logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid rgb(25,35,25);
+}
+
+aside.logo img {
+    width: 98%;
+    height: 98%;
+}
+
+@media(max-width: 576px) {
+    aside.logo img {
+        width: 350px;
+    }
+}
