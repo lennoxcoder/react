@@ -1,0 +1,25 @@
+.boxframe {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    min-width: 100px;
+    justify-content: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    input {
+        height:30px;
+        margin-bottom: 15px;
+    }    
+    button {
+        height:35px;
+    }
+}
+
+.readonly {
+    background: rgb(206, 197, 197);
+}
